@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_135sdp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/jdl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Welcome"
+                android:textColor="#63432a"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <!--            <TextView-->
+            <!--                android:layout_marginTop="@dimen/_19sdp"-->
+            <!--                android:layout_marginLeft="@dimen/_20sdp"-->
+            <!--                android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+            <!--                android:textSize="@dimen/_20sdp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textColor="#63432a"/>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:text="Lets start the best taste for your \nnext coffee break"
+                android:textColor="#63432a"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_17sdp"
+                android:background="@drawable/selector3"
+                android:src="@drawable/pf" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/text1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/selector1">
+
+            <ImageView
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/searchh" />
+
+            <EditText
+                android:layout_width="100sp"
+                android:layout_height="40sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:hint="Search Place"
+                android:inputType="text"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/topbar"
+        android:scrollbars="none"
+        android:padding="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/lymenu"
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/jdlmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="Menu"
+                        android:textColor="#63432a"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlya"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_below="@id/jdlmenu"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rly1"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:background="@drawable/selector3">
+
+                        <ImageView
+                            android:id="@+id/icon11"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/_6sdp"
+                            android:src="@drawable/coffee" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rly1"
+                        android:layout_centerHorizontal="true"
+                        android:text="Coffee"
+                        android:textColor="#63432a"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyb"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_below="@id/jdlmenu"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_toRightOf="@id/rlya">
+
+                    <RelativeLayout
+                        android:id="@+id/rly2"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:background="@drawable/selector3">
+
+                        <ImageView
+                            android:id="@+id/icon22"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_6sdp"
+                            android:src="@drawable/tea" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rly2"
+                        android:layout_centerHorizontal="true"
+                        android:text="Tea"
+                        android:textColor="#63432a"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyc"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_below="@id/jdlmenu"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_toRightOf="@id/rlyb">
+
+                    <RelativeLayout
+                        android:id="@+id/rly3"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:background="@drawable/selector3">
+
+                        <ImageView
+                            android:id="@+id/icon33"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_6sdp"
+                            android:src="@drawable/milk" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rly3"
+                        android:layout_centerHorizontal="true"
+                        android:text="Milk"
+                        android:textColor="#63432a"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyd"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_below="@id/jdlmenu"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_toRightOf="@id/rlyc">
+
+                    <RelativeLayout
+                        android:id="@+id/rly4"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:background="@drawable/selector3">
+
+                        <ImageView
+                            android:id="@+id/icon44"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_6sdp"
+                            android:src="@drawable/taco" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rly4"
+                        android:layout_centerHorizontal="true"
+                        android:text="Snacks"
+                        android:textColor="#63432a"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lynearby"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_195sdp"
+                android:layout_below="@id/lymenu"
+                android:background="#FFFFFF"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/jdlnearby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="Nearby Place"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textStyle="bold"
+                        android:textColor="#63432a"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="See All"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/hs1"
+                    android:layout_below="@id/jdlnearby"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:id="@+id/tmpt1"
+                            android:layout_below="@id/jdlnearby"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_175sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/shapenearby">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/gbr1"
+                                    android:layout_width="@dimen/_140sdp"
+                                    android:layout_height="@dimen/_85sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/jwrgg" />
+
+                                <TextView
+                                    android:id="@+id/texta"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/gbr1"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:text="Jiwa Raga Cafe"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/maps"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_below="@id/texta"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:src="@drawable/maps" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/texta"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_toRightOf="@id/maps"
+                                    android:text="Jl. Veteran No.15, \nPurus, Kec. Padang"
+                                    android:textSize="@dimen/_9sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/maps"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_7sdp"
+                                    android:layout_toRightOf="@id/maps"
+                                    android:text="0.4 Km"
+                                    android:textSize="@dimen/_9sdp" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tmpt2"
+                            android:layout_below="@id/jdlnearby"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_175sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/shapenearby"
+                            android:layout_toRightOf="@id/tmpt1">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/gbr2"
+                                    android:layout_width="@dimen/_140sdp"
+                                    android:layout_height="@dimen/_85sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/tedee" />
+
+                                <TextView
+                                    android:id="@+id/textb"
+                                    android:layout_below="@id/gbr2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:text="Tede x Rmbn"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="bold"/>
+
+                                <ImageView
+                                    android:layout_below="@id/textb"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:id="@+id/map"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:src="@drawable/maps"/>
+                                <TextView
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_below="@id/textb"
+                                    android:layout_toRightOf="@id/map"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:text="Jl. S. Parman No.155 A, \nUlak Karang, Kec. Padang"
+                                    android:layout_centerVertical="true"
+                                    />
+
+                                <TextView
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_7sdp"
+                                    android:layout_below="@id/map"
+                                    android:layout_toRightOf="@id/map"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:text="1.2 Km"
+                                    android:layout_centerVertical="true"
+                                    />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tmpt3"
+                            android:layout_below="@id/jdlnearby"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_175sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/shapenearby"
+                            android:layout_toRightOf="@id/tmpt2">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/gbr3"
+                                    android:layout_width="@dimen/_140sdp"
+                                    android:layout_height="@dimen/_85sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:src="@drawable/vierr" />
+
+                                <TextView
+                                    android:id="@+id/textc"
+                                    android:layout_below="@id/gbr3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:text="Vier Cafe"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="bold"/>
+
+                                <ImageView
+                                    android:layout_below="@id/textc"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:id="@+id/ma"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:src="@drawable/maps"/>
+                                <TextView
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_below="@id/textc"
+                                    android:layout_toRightOf="@id/ma"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:text="Jl. B. Kasang, \nAlai Parak Kopi, Kec. Padang"
+                                    android:layout_centerVertical="true"
+                                    />
+
+                                <TextView
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_7sdp"
+                                    android:layout_below="@id/ma"
+                                    android:layout_toRightOf="@id/ma"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:text="1.8 Km"
+                                    android:layout_centerVertical="true"
+                                    />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sv1"
+                android:layout_below="@id/lynearby"
+                android:layout_marginTop="@dimen/_15sdp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="@dimen/_85sdp"
+                        android:src="@drawable/banner11" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="@dimen/_85sdp"
+                        android:src="@drawable/banner22"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="@dimen/_85sdp"
+                        android:src="@drawable/banner33"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_250sdp"
+                android:layout_below="@id/sv1"
+                android:id="@+id/laybawah"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector2">
+
+                <RelativeLayout
+                    android:id="@+id/lybawah1"
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    >
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_width="@dimen/_268sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:background="@drawable/pfcffe"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_below="@id/lybawah1"
+                    android:background="@drawable/selector2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Benefits of drinking coffee"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:text="Recent studies found that coffee drinkers are less likely to die from some of the leading causes of death in women: coronary heart disease, stroke, diabetes and kidney disease."
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="@dimen/_330sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selectorprofile">
+
+        <ImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:src="@drawable/mylittlewinter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tri Andini Valeria"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="#FFFFFF"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_108sdp"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi. I'm professional programmer"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#FFFFFF"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_130sdp"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_95sdp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/whiteselector"
+        android:layout_marginTop="@dimen/_155sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="“Profesional dengan pengalaman selama 1 tahun dalam pengembangan aplikasi ponsel berbasis Android. Terampil dalam kolaborasi antar tim, pemecahan masalah, dan manajemen proyek.”"
+            android:textColor="#705f3e"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="italic"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="sans-serif"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_55sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/gambar1"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/emailll"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="triandini.v@gmail.com"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/gambar1"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="#705f3e"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step1"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_55sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/gambar2"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/maps"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Padang, West Sumatera"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/gambar2"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="#705f3e"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step2"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_55sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/gambar3"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/twitter"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dinschuu"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/gambar3"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="#705f3e"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/step4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step3"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_55sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/gambar4"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/iphone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+62 813 1562 6223"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/gambar4"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="#705f3e"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
